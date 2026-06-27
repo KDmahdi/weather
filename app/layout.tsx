@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Heder from "@/component/Heder/Heder";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" style={{
+      minHeight: "1vh",
+      background: "linear-gradient(135deg, #4c1d95, #2e1065, #0f172a)",
+      padding: "32px"
+    }}>
+        <Heder/>
+        {children}
+        </body>
     </html>
   );
 }
