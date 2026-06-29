@@ -1,0 +1,33 @@
+<svg width="140" height="120" viewBox="0 0 140 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="sunsetGrad" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#ffaa00"/>
+    <stop offset="100%" stop-color="#ff6600"/>
+  </radialGradient>
+  <radialGradient id="cloudPink" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#ff50cc"/>
+    <stop offset="100%" stop-color="#6600cc"/>
+  </radialGradient>
+  <radialGradient id="gloss" cx="35%" cy="25%" r="55%">
+    <stop offset="0%" stop-color="rgba(255,255,255,0.5)"/>
+    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+  </radialGradient>
+</defs>
+<g stroke="#ffaa00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+  <line x1="75" y1="8" x2="75" y2="18"/>
+  <line x1="75" y1="60" x2="75" y2="68"/>
+  <line x1="35" y1="33" x2="28" y2="33"/>
+  <line x1="115" y1="33" x2="108" y2="33"/>
+  <line x1="47" y1="15" x2="53" y2="21"/>
+  <line x1="97" y1="45" x2="103" y2="51"/>
+  <line x1="97" y1="15" x2="91" y2="21"/>
+</g>
+<circle cx="75" cy="33" r="22" fill="url(#sunsetGrad)"/>
+<circle cx="75" cy="33" r="22" fill="url(#gloss)"/>
+<ellipse cx="45" cy="80" rx="20" ry="16" fill="url(#cloudPink)"/>
+<ellipse cx="62" cy="72" rx="26" ry="20" fill="url(#cloudPink)"/>
+<ellipse cx="85" cy="76" rx="24" ry="17" fill="url(#cloudPink)"/>
+<ellipse cx="104" cy="82" rx="18" ry="14" fill="url(#cloudPink)"/>
+<rect x="25" y="82" width="97" height="22" rx="2" fill="url(#cloudPink)"/>
+<ellipse cx="72" cy="77" rx="42" ry="26" fill="url(#gloss)"/>
+</svg>

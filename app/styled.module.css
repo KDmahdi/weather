@@ -1,0 +1,307 @@
+/* .main{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.weatherWrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* تغییر به space-between برای چسبیدن به لبه‌ها */
+    margin: 0 auto;
+    padding: 50px 40px;
+    /* یه کم پدینگ چپ و راست رو بیشتر کردم که خیلی نچسبه به لبه مانیتور */
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* استایل‌های متن و دکمه‌های مشترک */
+.subtitle,
+.featureDesc {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.outlineBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.outlineBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.btnIcon {
+    display: inline-block;
+}
+
+/* بخش سمت چپ */
+.leftSection {
+    /* flex: 1; */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.cityName {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+/* بخش وسط - کارت شیشه‌ای */
+.centerCard {
+    width: 280px;
+    height: 380px;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.glassEffect {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.weatherImage img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+.temperatureBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tempNumber {
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.tempUnit {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.extraDetails {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* بخش سمت راست */
+.rightSection {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featureTitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+.weather-cards-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 24px 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+  color: #fff;
+  position: relative;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.weather-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.55),
+    transparent
+  );
+}
+
+.card-label {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.03em;
+  align-self: flex-start;
+}
+
+.card-primary {
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-sup {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card-secondary {
+  font-size: 28px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.card-sup-sm {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.main1{
+    background: linear-gradient(135deg, #7034c9, #2e1065, #0f172a)
+}
+
+
+/* شششششششششششششششششششششششششششششششششششششششششش */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  /* بک‌گراند شما در پروژه اصلی هست، اما برای نمایش بهتر اینجا هم اضافه شده */
+  /* background: radial-gradient(circle at center, #351F77 0%, #1D1D41 100%); */
+  
+  
+  min-height: 250px;
+  font-family: system-ui, -apple-system, sans-serif; /* استفاده از فونت سیستم */
+}
+
+/* استایل اصلی باکس شیشه‌ای (Glassmorphism) */
+.glassBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05); /* پس‌زمینه شفاف */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* افکت تاری پشت شیشه */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* مرز بسیار نازک */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* پخش محتوا با فاصله */
+  padding: 25px 15px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); 
+}
+
+
+.title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+
+.valueContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; 
+  gap: 5px;
+  color: white;
+}
+
+
+.mainValue {
+  font-size: 48px;
+  font-weight: 300; 
+  line-height: 1;
+}
+
+
+.unit {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+.subValue {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 5px;
+}
+
+
+.accentBar {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  filter: blur(0.5px); 
+}

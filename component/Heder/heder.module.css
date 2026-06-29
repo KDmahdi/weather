@@ -1,0 +1,99 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 30px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* بخش لوگو */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoText {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* باکس سرچ شیشه‌ای (Glassmorphism) */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* برای پشتیبانی در سافاری */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 12px 20px;
+  width: 33%;
+  min-width: 300px;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+  font-size: 14px;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+}
+
+/* بخش دکمه سمت راست */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+
+.menuButton:hover {
+  color: #ffffff;
+}
+
+.speakButton {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.speakButton:hover {
+  background: #ffffff;
+}

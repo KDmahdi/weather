@@ -28,12 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" style={{
-      minHeight: "1vh",
-      background: "linear-gradient(135deg, #4c1d95, #2e1065, #0f172a)",
-      padding: "32px"
-    }}>
-        <Heder/>
+      <body className="min-h-full flex flex-col">
         {children}
         </body>
     </html>
