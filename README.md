@@ -1,3 +1,4 @@
+Markdown
 # ☁️ AuraWeather
 
 A modern, responsive, and secure weather dashboard built with Next.js and TypeScript. AuraWeather provides real-time weather details for any city worldwide with a dynamic, glassmorphism-inspired user interface.
@@ -24,10 +25,7 @@ A modern, responsive, and secure weather dashboard built with Next.js and TypeSc
 1. Clone the repository:
    ```bash
    git clone [https://github.com/KDMahdi/weather.git](https://github.com/KDMahdi/weather.git)
-
-
-
-   Install dependencies:
+Install dependencies:
 
 Bash
 npm install
